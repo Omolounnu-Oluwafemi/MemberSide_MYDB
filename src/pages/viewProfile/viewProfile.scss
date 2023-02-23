@@ -1,0 +1,91 @@
+.page {
+  display: flex;
+  width: 100%;
+  padding-right: 25px;
+
+  .viewProfile {
+    flex: 8;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    background-color: rgb(230, 228, 228);
+    padding: 30px;
+
+    .left {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 30px;
+      padding-top: 30px;
+      flex: 1;
+      border-radius: 25px;
+      background-color: white;
+
+      .img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .about {
+        margin-top: 70px;
+        text-align: justify;
+
+        h6 {
+          font-size: large;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .right {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 50px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      flex: 2;
+      border-radius: 25px;
+      background-color: white;
+
+      .rightHead {
+        font-size: large;
+        font-weight: bold;
+      }
+
+      .pDetails {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        .pDetails1 {
+          flex: 2;
+
+          h6 {
+            font-size: small;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    p {
+      font-size: 30px;
+    }
+
+    h6 {
+      font-weight: 800;
+      font-size: xx-large;
+    }
+
+    .Sidebar {
+      display: none;
+    }
+    .viewProfile {
+      display: block;
+    }
+  }
+}
