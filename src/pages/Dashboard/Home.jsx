@@ -49,15 +49,13 @@ const Home = () => {
             </div>
           </Link>
         </div>
-          <RecentActivities/>
-          <CurrentProject/>
+          <RecentActivities/> 
+          <CurrentProject/> 
         <div className="newLatest">
-          <MessageNotification className="message"/>
+           <MessageNotification className="message"/> 
           <NewConnections className="connections"/>
         </div>  
       </div>
-  
-     
     </div>
   )
 }

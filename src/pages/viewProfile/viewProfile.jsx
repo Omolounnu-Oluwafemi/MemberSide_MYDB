@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 
 const ViewProfile = () => {
 
- const {currentUser } = useContext(AuthContext);
+ const {currentUser} = useContext(AuthContext);
 
  const {id} = useParams();
 

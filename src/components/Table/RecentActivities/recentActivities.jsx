@@ -7,10 +7,10 @@ import { useState} from "react";
 import { useEffect } from "react";
 
 const RecentActivities = () => {
-  const [message, setMessage] = useState([])
+  const [recent, setRecent] = useState([])
   useEffect(() => {
   Axios.get('/tables/recent').then((response) =>{
-        setMessage(response.data);
+        setRecent(response.data);
 })
   },[])
   return (
@@ -21,9 +21,8 @@ const RecentActivities = () => {
       </div>
       
       <List className="list">
-{message.map((val)=>(
+{recent.map((val)=>(
       <>
-       
       <div className="list_img">
       <Divider variant="fullWidth" component="li" />
         <img src={"${var.img}"} alt="" className="img"/>

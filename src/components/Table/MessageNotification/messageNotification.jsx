@@ -33,7 +33,7 @@ const [message, setMessage] = useState([])
                       <p>{val.lastname}</p>
                       <span>Hi! Are you still home?</span>
                 </li>
-                <li>
+                {/* <li>
                       <img
                             src={Avatar}
                             alt=""
@@ -61,7 +61,7 @@ const [message, setMessage] = useState([])
                             className="avatar" />
                       <p>John doe</p>
                       <span>Hi! Are you still home?</span>
-                </li>
+                </li> */}
                 </>
 ))}
     </List>
